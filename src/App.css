@@ -1,0 +1,103 @@
+/* App.css */
+
+/* General styling for the entire app */
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+  /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button style */
+.buttonStyle {
+  border: none;
+  background-color: dodgerblue;
+  color: antiquewhite;
+  border-radius: 15px;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+
+.signOutStyle {
+  border: none;
+  background-color: teal;
+  color: antiquewhite;
+  border-radius: 12px;
+  padding: 3px 11px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+/* Centered section styles */
+.centered-section {
+  text-align: center;
+  margin-top: 50px;
+  /* Adjust as needed */
+}
+
+/* Two-column layout styles */
+.two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* Event list container */
+.event-list-container {
+  padding: 10px;
+  height: 70vh;
+  /* Adjust height as needed */
+}
+
+/* Event creation container */
+.event-create-container {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Form inputs */
+input[type='text'],
+input[type='datetime-local'],
+input[type='date'],
+input[type='time'] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Date and time container */
+.date-time-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Date and time input fields */
+.date-input,
+.time-input {
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Animation for the logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Media query for reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
